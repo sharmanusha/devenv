@@ -1,0 +1,18 @@
+app:
+  name: react-demo
+  framework: react
+
+registry:
+  url: localhost:5000
+
+namespace: react-demo-ns
+
+environment: local
+
+scanners:
+  - trivy
+  - semgrep
+
+deployment:
+  replicas: 1
+  port: 80
